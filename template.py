@@ -35,7 +35,7 @@ for file in list_of_files:
         logging.info(f"creating file directory :{file_dir}")
     
     if (not os.path.exists(file_path)) or (os.path.getsize(file_path))==0:
-        with open(file_path,"w") as file:
+        with open(file,"w") as file:
             pass
             logging.info(f"creating empty file path :{file_path}")
 
